@@ -1,0 +1,17 @@
+[package]
+name = "rust-nostd-lib"
+version = "0.1.0"
+authors = ["Neil Moore <dar13.dev@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rusttest"
+crate-type = ["staticlib","cdylib"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
